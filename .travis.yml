@@ -16,7 +16,6 @@ jobs:
         - arch: ppc64le
           python: 2.7
           env: TEST_TYPE=check
-	  
 sudo: false
 install:
   - if [[ $TEST_TYPE == 'check' ]]; then pip install -r requirements-dev.txt; fi
