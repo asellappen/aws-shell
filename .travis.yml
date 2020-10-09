@@ -4,8 +4,6 @@ arch:
    - amd64
 env: 
    - TEST_TYPE=test
-   - TEST_TYPE=check
-python: 2.7
 python:
   - 2.6
   - 2.7
