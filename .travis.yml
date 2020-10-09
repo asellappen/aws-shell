@@ -11,7 +11,7 @@ python:
   - 3.4
   - 3.5
   - 3.6
-matrix:
+jobs:
     include:
         - arch: ppc64le
           python: 2.7
