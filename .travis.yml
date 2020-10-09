@@ -11,6 +11,15 @@ python:
   - 3.4
   - 3.5
   - 3.6
+matrix:
+    include:
+        - arch:ppc64le
+          python: 2.7
+          env: TEST_TYPE=check
+	    -  arch:amd64
+		    python: 2.7
+          env: TEST_TYPE=check
+          
 sudo: false
 install:
   - if [[ $TEST_TYPE == 'check' ]]; then pip install -r requirements-dev.txt; fi
