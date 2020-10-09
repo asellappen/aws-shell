@@ -1,4 +1,7 @@
 language: python
+arch:
+   - ppc64le
+   - amd64
 matrix:
     include:
         - python: 2.6
