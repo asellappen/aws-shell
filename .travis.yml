@@ -13,11 +13,11 @@ python:
   - 3.6
 matrix:
     include:
-        - arch:ppc64le
+        - arch: ppc64le
           python: 2.7
           env: TEST_TYPE=check
-	    -  arch:amd64
-		    python: 2.7
+	- arch: amd64
+          python: 2.7
           env: TEST_TYPE=check
           
 sudo: false
